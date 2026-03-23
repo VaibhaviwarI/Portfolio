@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, ArrowRight } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowRight, Download } from 'lucide-react';
 import { motion } from 'framer-motion';
 import RobotAvatar from './RobotAvatar';
 
@@ -35,6 +35,9 @@ const Hero = () => {
               </a>
               <a href="#contact" className="px-8 py-3 bg-transparent border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 rounded-full font-medium transition-colors">
                 Contact Me
+              </a>
+              <a href="/Resume.pdf" download="Resume.pdf" className="px-8 py-3 bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white rounded-full font-medium transition-all shadow-lg shadow-purple-500/20 flex items-center gap-2">
+                Download Resume <Download size={18} />
               </a>
             </div>
 
